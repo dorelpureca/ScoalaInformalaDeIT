@@ -11,29 +11,9 @@ namespace Project_2
             // Print array of random numbers
             int[] numbers = CreateArray();
             int[] otherNumbers = CreateArray();
-            PrintArray(numbers);
+            //PrintArray(numbers);
             Console.WriteLine();
 
-            // Max from array
-            Console.WriteLine($"\nMax number is: {GetMaxFromArray(numbers)}");
-
-            // Number of occurences of an element
-            Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
-
-            // Sum of even numbers
-            Console.WriteLine($"\nTotal sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
-
-            // Reverse an array
-            Console.WriteLine("\nReversed array: ");
-            var arrayToPrint = ReverseArray(numbers);
-            PrintArray(arrayToPrint);
-
-            // Sort Ascending an array
-            Console.WriteLine("\nAscending array: ");
-            var sortedAsc = BubbleSort(numbers);
-            PrintArray(sortedAsc);
-            Console.WriteLine();
-            
             Stopwatch sw = new Stopwatch();
             sw.Start();
             BubbleSort(numbers);
@@ -53,7 +33,7 @@ namespace Project_2
 
         static int[] CreateArray()
         {
-            int[] numbers = new int[10000];
+            int[] numbers = new int[100];
             Random rnd = new Random();
 
             for (int i = 0; i < numbers.Length; i++)
@@ -91,7 +71,7 @@ namespace Project_2
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i]==reference)
+                if (numbers[i] == reference)
                 {
                     counter++;
                 }
@@ -129,9 +109,9 @@ namespace Project_2
         {
             for (int i = 0; i < input.Length; i++)
             {
-                for (int j = i+1; j < input.Length; j++)
+                for (int j = i + 1; j < input.Length; j++)
                 {
-                    if (input[i]>input[j])
+                    if (input[i] > input[j])
                     {
                         var temp = input[i];
                         input[i] = input[j];

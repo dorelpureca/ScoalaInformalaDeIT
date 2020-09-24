@@ -13,16 +13,23 @@ namespace Project_2
             Console.WriteLine();
 
             // Max from array
-            Console.WriteLine($"Max number is: {GetMaxFromArray(numbers)}");
-            Console.WriteLine();
+            Console.WriteLine($"\nMax number is: {GetMaxFromArray(numbers)}");
 
             // Number of occurences of an element
-            Console.WriteLine($"{numbers[0]} appears {GetOccurences(numbers)}");
-            Console.WriteLine();
+            Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
 
-            // Sun of even numbers
-            Console.WriteLine($"Total sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
-            Console.WriteLine();
+            // Sum of even numbers
+            Console.WriteLine($"\nTotal sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
+
+            // Reverse an array
+            Console.WriteLine("\nReversed array: ");
+            var arrayToPrint = ReverseArray(numbers);
+            PrintArray(arrayToPrint);
+
+            // Sort Ascending an array
+            Console.WriteLine("\nAscending array: ");
+            var sortedAsc = SortAscending(numbers);
+            PrintArray(sortedAsc);
 
             Console.ReadLine();
 
@@ -89,5 +96,34 @@ namespace Project_2
             return sum;
         }
 
+        static int[] ReverseArray(int[] input)
+        {
+            int[] output = new int[input.Length];
+            int outputIndex = 0;
+
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                output[outputIndex] = input[i];
+                outputIndex++;
+            }
+            return output;
+        }
+
+        static int[] SortAscending(int[] input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                for (int j = i+1; j < input.Length; j++)
+                {
+                    if (input[i]>input[j])
+                    {
+                        var temp = input[i];
+                        input[i] = input[j];
+                        input[j] = temp;
+                    }
+                }
+            }
+            return input;
+        }
     }
 }

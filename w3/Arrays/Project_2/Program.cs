@@ -11,14 +11,14 @@ namespace Project_2
             // Print array of random numbers
             int[] numbers = CreateArray();
             int[] otherNumbers = CreateArray();
-            //PrintArray(numbers);
+            PrintArray(numbers);
             //Console.WriteLine();
 
             //// Max from array
             //Console.WriteLine($"\nMax number is: {GetMaxFromArray(numbers)}");
 
-            //// Number of occurences of an element
-            //Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
+            // Number of occurences of an element
+            Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
 
             //// Sum of even numbers
             //Console.WriteLine($"\nTotal sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
@@ -53,12 +53,12 @@ namespace Project_2
 
         static int[] CreateArray()
         {
-            int[] numbers = new int[10000];
+            int[] numbers = new int[10];
             Random rnd = new Random();
 
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rnd.Next(0, 40);
+                numbers[i] = rnd.Next(0, 10);
             }
 
             return numbers;

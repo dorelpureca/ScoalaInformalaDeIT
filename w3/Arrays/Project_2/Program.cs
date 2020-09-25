@@ -11,40 +11,40 @@ namespace Project_2
             // Print array of random numbers
             int[] numbers = CreateArray();
             int[] otherNumbers = CreateArray();
-            PrintArray(numbers);
-            Console.WriteLine();
+            //PrintArray(numbers);
+            //Console.WriteLine();
 
-            // Max from array
-            Console.WriteLine($"\nMax number is: {GetMaxFromArray(numbers)}");
+            //// Max from array
+            //Console.WriteLine($"\nMax number is: {GetMaxFromArray(numbers)}");
 
-            // Number of occurences of an element
-            Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
+            //// Number of occurences of an element
+            //Console.WriteLine($"\n{numbers[0]} appears {GetOccurences(numbers)}");
 
-            // Sum of even numbers
-            Console.WriteLine($"\nTotal sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
+            //// Sum of even numbers
+            //Console.WriteLine($"\nTotal sum of even numbers is {GetSumOfEvenNumbers(numbers)}");
 
-            // Reverse an array
-            Console.WriteLine("\nReversed array: ");
-            var arrayToPrint = ReverseArray(numbers);
-            PrintArray(arrayToPrint);
+            //// Reverse an array
+            //Console.WriteLine("\nReversed array: ");
+            //var arrayToPrint = ReverseArray(numbers);
+            //PrintArray(arrayToPrint);
 
-            // Sort Ascending an array
-            Console.WriteLine("\nAscending array: ");
-            var sortedAsc = BubbleSort(numbers);
-            PrintArray(sortedAsc);
-            Console.WriteLine();
+            //// Sort Ascending an array
+            //Console.WriteLine("\nAscending array: ");
+            //var sortedAsc = BubbleSort(numbers);
+            //PrintArray(sortedAsc);
+            //Console.WriteLine();
             
             Stopwatch sw = new Stopwatch();
             sw.Start();
             BubbleSort(numbers);
             sw.Stop();
-            Console.WriteLine($"Bubble sort took: {sw.ElapsedMilliseconds} ms");
+            Console.WriteLine($"\nBubble sort took: {sw.ElapsedMilliseconds} ms");
             sw.Reset();
 
             sw.Start();
             Array.Sort(otherNumbers);
             sw.Stop();
-            Console.WriteLine($"Array.sort took: {sw.ElapsedMilliseconds} ms");
+            Console.WriteLine($"\nArray.sort took: {sw.ElapsedMilliseconds} ms");
             sw.Reset();
 
             Console.ReadLine();

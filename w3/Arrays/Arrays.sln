@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Arrays - exercises", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.MultiArrays", "MultiArrays\3.MultiArrays.csproj", "{9C60BAEF-5D7E-4290-BF0B-A37BBC995E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Practice", "Exercises\4.Practice.csproj", "{941490DF-9B02-4CB7-8AD2-5485FACABF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.Practice", "Exercises\4.Practice.csproj", "{941490DF-9B02-4CB7-8AD2-5485FACABF7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.Practice-MultiArrays", "5.Practice-MultiArrays\5.Practice-MultiArrays.csproj", "{556FAA06-6BC9-473F-B4D0-E739BDEC8F9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{941490DF-9B02-4CB7-8AD2-5485FACABF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{941490DF-9B02-4CB7-8AD2-5485FACABF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{941490DF-9B02-4CB7-8AD2-5485FACABF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{556FAA06-6BC9-473F-B4D0-E739BDEC8F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556FAA06-6BC9-473F-B4D0-E739BDEC8F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556FAA06-6BC9-473F-B4D0-E739BDEC8F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556FAA06-6BC9-473F-B4D0-E739BDEC8F9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

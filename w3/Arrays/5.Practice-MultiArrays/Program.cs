@@ -36,7 +36,7 @@ namespace _5.Practice_MultiArrays
                 {
                     if (row==col)
                     {
-                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.Write($" {inputArray[row, col]} ");
                         Console.ResetColor();

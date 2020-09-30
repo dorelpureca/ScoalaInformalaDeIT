@@ -7,7 +7,6 @@ namespace Classes
 {
     //class Person   =  Default access modifier for classes is internal
     //internal class = Person - is the same thing!
-
     public class Person
     {
         // class fields
@@ -16,38 +15,36 @@ namespace Classes
         private readonly DateTime birthDate;
         public const decimal temperature=25.23M;
         public readonly Gender gender;
-
+        
         public string FirstName
         {
-            get { return firstName; }   // if you use only get -> read only
-            set { firstName = value; }  // if you use only set -> write only
-                                        // if you use both -> read-write
-        }
+            get { return firstName; }   //if you use only get -> read only
+            set { firstName = value; }  //if you use only set -> write only
+        }                               //if you use both     -> read-write
+        
         public Person(string first, string last)  //Access modifier
         {
             firstName = first;
             lastName = last;
             birthDate = DateTime.Now;
-
-          //  temperature = 24.24;
         }
-
+        
         public Person(string first, string last, Gender gender)  //Access modifier
         {
             firstName = first;
             lastName = last;
             birthDate = new DateTime(1989,03,06);
             this.gender = gender;
-
-            //  temperature = 24.24;
         }
 
-        public int Age { get
+        public int Age 
+        { 
+            get
             {
                 return DateTime.Now.Year - birthDate.Year;
             }
         }
-
+        
         public string FullName
         {
             get
@@ -55,11 +52,12 @@ namespace Classes
                 return firstName + " " + lastName;
             }
         }
-
+        
         public enum Gender
         {
             Male,
-            Female
+            Female,
+            NA
         }
     }
 }

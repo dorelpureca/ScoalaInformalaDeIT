@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Product_Inventory
 {
-    class Dairy: Product 
+    class Bread : Product
     {
-        public Dairy(string productName, double weight, DateTime productionDate, string producer) : base(productName,weight,productionDate,producer)
+        public Bread(string productName, double weight, DateTime productionDate, string producer) : base(productName, weight, productionDate, producer)
         {
-            
+
         }
+
         public bool IsExpired()
         {
-            DateTime expireDate = ProductionDate.AddDays(7);
-            var isExpired = expireDate > DateTime.Now;
-
+            var expireDate = ProductionDate.AddDays(4);
+            var isExpired = expireDate < DateTime.Now;
             if (isExpired)
                 Console.WriteLine("Your product is expired.");
             else
@@ -26,15 +26,14 @@ namespace Product_Inventory
         //{
         //    get
         //    {
-        //        DateTime expireDate = ProductionDate.AddDays(7);
-        //        var isExpire = expireDate < DateTime.Now;
-
+        //        var expireDate = ProductionDate.AddDays(2);
+        //        var isExpired = expireDate < DateTime.Now;
         //        if (isExpired)
         //            Console.WriteLine("Your product is expired.");
         //        else
         //            Console.WriteLine("Your product is not expired.");
         //        return isExpired;
-        //    }            
+        //    }
         //}
     }
 }

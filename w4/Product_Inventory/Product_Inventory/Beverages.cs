@@ -10,17 +10,19 @@ namespace Product_Inventory
         {
 
         }
-        public bool IsExpired()
+        public string IsExpired()
         {
-            DateTime expireDate = ProductionDate.AddYears(3);
-            var isExpired = expireDate < DateTime.Now;
+            DateTime expireDate = ProductionDate.AddDays(7);
+            var isExpired = expireDate > DateTime.Now;
+            var resultText = "";
 
             if (isExpired)
-                Console.WriteLine("Your product is expired.");
+                resultText += "expired!";
             else
-                Console.WriteLine("Your product is not expired.");
-            return isExpired;
+                resultText += "not expired!";
+            return resultText;
         }
+
         //public bool IsExpired
         //{
         //    get

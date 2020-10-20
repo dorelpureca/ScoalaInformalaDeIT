@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Working with collections", "Working with lists\Working with collections.csproj", "{739430B7-DA3B-496D-8AE0-13200E4FD669}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{739430B7-DA3B-496D-8AE0-13200E4FD669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739430B7-DA3B-496D-8AE0-13200E4FD669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739430B7-DA3B-496D-8AE0-13200E4FD669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739430B7-DA3B-496D-8AE0-13200E4FD669}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5E99D89-2C48-44E2-8E28-EA3F9F9305FB}
+	EndGlobalSection
+EndGlobal
